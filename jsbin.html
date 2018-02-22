@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+    #gamepad {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    #restart-game {
+      display: none;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: gray;
+      padding: 10px 20px;
+      color: #fff;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      border-radius: 2px;
+    }
+
+    body.end-game #restart-game {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <canvas id="gamepad"></canvas>
+  <button id="restart-game">Restart</button>
+  <script src="jsbin.js"></script>
+  <script src="balls.js"></script>
+</body>
+</html>
